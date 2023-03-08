@@ -8,7 +8,7 @@ public class LongestCommonPrefix {
             return strs[0];
         }
 
-        Arrays.sort(strs, (a, b)->Integer.compare(a.length(), b.length()));
+        Arrays.sort(strs, (a, b) -> Integer.compare(a.length(), b.length()));
         int n = strs[0].length();
         String str = strs[0];
 

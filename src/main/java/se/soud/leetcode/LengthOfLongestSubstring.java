@@ -34,7 +34,7 @@ public class LengthOfLongestSubstring {
             return substrs.get(0).length();
         }
 
-        Collections.sort(substrs, (a, b)->Integer.compare(b.length(), a.length()));
+        Collections.sort(substrs, (a, b) -> Integer.compare(b.length(), a.length()));
 
         return substrs.get(0).length();
     }

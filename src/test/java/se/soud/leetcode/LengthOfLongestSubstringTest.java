@@ -22,7 +22,7 @@ public class LengthOfLongestSubstringTest {
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

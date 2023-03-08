@@ -20,20 +20,16 @@ public class LongestPalindromeTest {
             assertEquals((String) o[1], solution.longestPalindrome((String) o[0]));
         }
     }
-    
+
     public static Object[][] provideStringAndExpectedLength() {
-        return new Object[][] {
-            { "bb", "bb" },
-            { "a", "a" },
-            { "eertree", "eertree" },
-            { "efabcbatgaba", "abcba" }
-        };
+        return new Object[][] {{"bb", "bb"}, {"a", "a"}, {"eertree", "eertree"},
+                {"efabcbatgaba", "abcba"}};
     }
 
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

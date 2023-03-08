@@ -10,7 +10,7 @@ public class IsAnagram {
 
         char[] sChars = s.toCharArray();
         char[] tChars = t.toCharArray();
-        
+
         Arrays.sort(sChars);
         Arrays.sort(tChars);
 
@@ -27,11 +27,11 @@ public class IsAnagram {
 
         int[] alphabet = new int[26];
 
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             alphabet[c - 'a']++;
         }
 
-        for (char c: t.toCharArray()) {
+        for (char c : t.toCharArray()) {
             alphabet[c - 'a']--;
 
             if (alphabet[c - 'a'] < 0) {

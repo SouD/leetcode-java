@@ -19,13 +19,13 @@ public class ZigZagConversionTest {
         assertEquals("PAHNAPLSIIGYIR", solution.convert("PAYPALISHIRING", 3));
         assertEquals("PYAIHRNAPLSIIG", solution.convert("PAYPALISHIRING", 2));
         assertEquals("PINALSIGYAHRPI", solution.convert("PAYPALISHIRING", 4));
-        assertEquals("A", solution.convert("A",1));
+        assertEquals("A", solution.convert("A", 1));
     }
 
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

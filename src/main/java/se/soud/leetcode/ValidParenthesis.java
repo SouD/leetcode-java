@@ -11,14 +11,11 @@ public class ValidParenthesis {
             return false;
         }
 
-        Map<String, String> complement = Map.ofEntries(
-            entry(")", "("),
-            entry("}", "{"),
-            entry("]", "[")
-        );
+        Map<String, String> complement =
+                Map.ofEntries(entry(")", "("), entry("}", "{"), entry("]", "["));
         Stack<String> stack = new Stack<String>();
 
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             String sc = String.valueOf(c);
 
             if (complement.containsValue(sc)) {

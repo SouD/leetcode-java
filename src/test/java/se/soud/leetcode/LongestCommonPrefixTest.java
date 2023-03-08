@@ -16,14 +16,14 @@ public class LongestCommonPrefixTest {
 
     @Test
     public void testLongestCommonPrefix() {
-        assertEquals("fl", solution.longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
-        assertEquals("", solution.longestCommonPrefix(new String[]{"dog", "car", "plane"}));
+        assertEquals("fl", solution.longestCommonPrefix(new String[] {"flower", "flow", "flight"}));
+        assertEquals("", solution.longestCommonPrefix(new String[] {"dog", "car", "plane"}));
     }
 
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

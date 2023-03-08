@@ -19,7 +19,7 @@ public class IsAnagramTest {
         assertEquals(true, solution.isAnagram("anagram", "nagaram"));
         assertEquals(false, solution.isAnagram("rat", "car"));
     }
-    
+
     @Test
     public void testIsAnagram2() {
         assertEquals(true, solution.isAnagram2("anagram", "nagaram"));
@@ -29,7 +29,7 @@ public class IsAnagramTest {
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

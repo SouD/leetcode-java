@@ -25,7 +25,7 @@ public class ValidParenthesisTest {
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

@@ -16,29 +16,19 @@ public class FindMedianSortedArraysTest {
 
     @Test
     public void testFindMedianSortedArrays() {
-        assertEquals(
-            2.0, 
-            solution.findMedianSortedArrays(new int[]{1, 2}, new int[]{3}),
-            0.001
-        );
+        assertEquals(2.0, solution.findMedianSortedArrays(new int[] {1, 2}, new int[] {3}), 0.001);
 
-        assertEquals(
-            3.0, 
-            solution.findMedianSortedArrays(new int[]{1, 2, 3}, new int[]{4, 5}),
-            0.001
-        );
+        assertEquals(3.0, solution.findMedianSortedArrays(new int[] {1, 2, 3}, new int[] {4, 5}),
+                0.001);
 
-        assertEquals(
-            2.5, 
-            solution.findMedianSortedArrays(new int[]{1, 2}, new int[]{3, 4}),
-            0.001
-        );
+        assertEquals(2.5, solution.findMedianSortedArrays(new int[] {1, 2}, new int[] {3, 4}),
+                0.001);
     }
 
     @After
     public void after() throws Exception {
         solution = null;
-        
+
         assertNull(solution);
     }
 }

@@ -5,8 +5,7 @@ public class StringToInteger {
         boolean signed = false;
         StringBuilder str = new StringBuilder();
         char c;
-        char[] chars = s.trim()
-            .toCharArray();
+        char[] chars = s.trim().toCharArray();
 
         for (int i = 0; i < chars.length; i++) {
             c = chars[i];
@@ -53,7 +52,7 @@ public class StringToInteger {
             if (signed) {
                 res = res * -1;
             }
-    
+
             return res;
         } catch (NumberFormatException e) {
             if (signed) {
@@ -85,10 +84,10 @@ public class StringToInteger {
     }
 
     public boolean isCharMinus(char c) {
-        return c == '-' ;
+        return c == '-';
     }
 
     public boolean isCharZero(char c) {
-        return c == '0' ;
+        return c == '0';
     }
 }
